@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    min-height: 100%;
+    width: 100%;
+}
+body {
+    background: #5285ff;
+    min-height: 100%;
+    width: 100%;
+}
+
+body #app{
+    min-height: 100%;
+}
+#app>div:first-child {
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+ul,li{
+    list-style-type: none;
+}
+
+.wrapper .header .ant-menu .ant-menu-item-selected, .ant-menu-submenu-popup .ant-menu-item {
+    background-color: transparent;
+}
+.wrapper .header .ant-menu .ant-menu-item-selected, .ant-menu-submenu-popup .ant-menu-item-active {
+    background-color: #4287FF;
+}
+.wrapper .header .ant-menu .ant-menu-item-selected, .ant-menu-submenu-popup .ant-menu-submenu-active {
+    background-color: #4287FF;
+}
+
+.ant-menu-submenu-title{color:#fff;}
+.ant-menu .ant-menu-submenu:hover{background:#4287FF;}
+.ant-modal-wrap .ant-confirm{top:30%;}
+
+
+div.ant-menu-dark, div.ant-menu-dark .ant-menu-sub{background:#1890FF;}
+
+.ant-layout-sider-children .ant-menu-inline{
+    border-right:0;
+}
+.ant-input-lg.disIput{
+    width:130px;
+    border:0;
+    background:transparent;
+    padding-left: 0;
+}
+.ant-menu-light .ant-menu-submenu-title{
+    color:rgba(0, 0, 0, 0.65);
+}
+.ant-menu-light .ant-menu-submenu-title:hover,.ant-menu-light .ant-menu-submenu:hover,.ant-menu-light  .ant-menu-submenu-inline:hover{
+    color:rgba(0, 0, 0, 0.65);
+    background:#fff;
+}
+.ant-menu-light  .ant-menu-sub.ant-menu-inline{
+    padding:0 10px;
+}
+
+.ant-modal .ant-select-selection-selected-value,.ant-modal .ant-select-selection__rendered{
+    font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.BMap_cpyCtrl {
+    display: none;
+}
+
+.anchorBL {
+    display: none;
+}
+
+

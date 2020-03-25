@@ -1,0 +1,153 @@
+{
+  "name":"新频段",
+  "region": "CN470-510",
+
+  // 节点可单独设置的属性
+  "rx1DROffset": 0,
+  "maxDutyCycle": 0,
+  "rx2Freq": 485300000,
+  "rx2DR": 0,
+  "maxFCntGap": 16384,
+  "adrAckLimit": 64,
+  "adrAckDelay": 32,
+  "receiveDelay1": 1000,
+  "receiveDelay2": 2000,
+  "joinAcceptDelay1": 5000,
+  "joinAcceptDelay2": 6000,
+  "txPowers": [2, 4, 6, 8, 10, 12, 14],
+  "nbTrans": 8,
+
+  // 删除
+  //"ackTimeoutMin" : 1,
+  //"ackTimeoutMax" : 3,
+
+  // 网关相关
+  "gwMaxTxPower": 15, // 单位 dBm
+  "gwDefaultPower": 15,
+  "gwMaxDutyCycle": 0,
+
+  // 公共属性
+  "dataRates": [{
+    "modu": "LORA",
+    "index": 0,
+    "spreadFactor": 12,
+    "bandwidth": 125,
+    "bitRate": 250,
+    "m": 59,
+    "n": 51
+  }, {
+    "modu": "LORA",
+    "index": 1,
+    "spreadFactor": 11,
+    "bandwidth": 125,
+    "bitRate": 440,
+    "m": 59,
+    "n": 51
+  }, {
+    "modu": "LORA",
+    "index": 2,
+    "spreadFactor": 10,
+    "bandwidth": 125,
+    "bitRate": 980,
+    "m": 59,
+    "n": 51
+  }, {
+    "modu": "LORA",
+    "index": 3,
+    "spreadFactor": 9,
+    "bandwidth": 125,
+    "bitRate": 1760,
+    "m": 123,
+    "n": 115
+  }, {
+    "modu": "LORA",
+    "index": 4,
+    "spreadFactor": 8,
+    "bandwidth": 125,
+    "bitRate": 3125,
+    "m": 230,
+    "n": 222
+  }, {
+    "modu": "LORA",
+    "index": 5,
+    "spreadFactor": 7,
+    "bandwidth": 125,
+    "bitRate": 5470,
+    "m": 230,
+    "n": 222
+  }],
+
+  "cfList": {
+    "enable": true,
+    /*
+    type: 0,      // freq
+    value: [
+        485300000,  // 频率单位 Hz
+        485300000,
+        485300000,
+        0,
+        485300000
+    ]
+    */
+    "type": 1, // chmask
+    "value": [
+      "0000", // 16进制字符串
+      "FE00", // 此处掩码表示 25 ~ 32 信道
+      "0001", // 此处掩码表示 25 ~ 32 信道
+      "0000",
+      "0000",
+      "0000"
+    ]
+  },
+  "chMaskLength": 12, // 单位：字节
+
+  "channels": [{
+    "ch": 25, // 频率规范中规定的 CH
+    "upFreq": 470300000,
+    "downFreq": 483900000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 26, // 频率规范中规定的 CH
+    "upFreq": 470500000,
+    "downFreq": 484100000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 27, // 频率规范中规定的 CH
+    "upFreq": 470700000,
+    "downFreq": 484300000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 28,
+    "upFreq": 470900000,
+    "downFreq": 484500000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 29,
+    "upFreq": 471100000,
+    "downFreq": 484700000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 30,
+    "upFreq": 471300000,
+    "downFreq": 484900000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 31,
+    "upFreq": 471500000,
+    "downFreq": 485100000,
+    "maxDR": 5,
+    "minDR": 0
+  }, {
+    "ch": 32,
+    "upFreq": 471700000,
+    "downFreq": 485300000,
+    "maxDR": 5,
+    "minDR": 0
+  }]
+}
